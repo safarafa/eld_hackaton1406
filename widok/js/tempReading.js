@@ -20,7 +20,7 @@ var inc = document.getElementById('incr');
 
 inc.onclick = function (){
     var http = new XMLHttpRequest();
-    var url ='temperature/increment';
+    var url ='http://localhost:8080/temperature/increment';
     var method = 'POST';
     http.open(method,url,true);
     http.onreadystatechange=function () {
@@ -38,7 +38,7 @@ var dec = document.getElementById('decr');
     
 dec.onclick =function (){
     var http = new XMLHttpRequest();
-    var url ='temperature/decrement';
+    var url ='http://localhost:8080/temperature/decrement';
     var method = 'POST';
     http.open(method,url,true);
     http.onreadystatechange=function () {
