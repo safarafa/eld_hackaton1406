@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/JavaServer/JavaServer.iml" filepath="$PROJECT_DIR$/JavaServer/JavaServer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/eld_hackaton1406.iml" filepath="$PROJECT_DIR$/.idea/eld_hackaton1406.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaServer/Java-Server.iml" filepath="$PROJECT_DIR$/JavaServer/Java-Server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/eld_hackaton14062.iml" filepath="$PROJECT_DIR$/.idea/eld_hackaton14062.iml" />
     </modules>
   </component>
 </project>
