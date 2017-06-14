@@ -11,8 +11,7 @@ public class TemperatureService{
              Temperature.setValue(Temperature.getValue()+1);
          }
         else throw new InvalidTemperatureException("Invalid temperature");
-
-
+         
      }
 
      public void decrement() throws InvalidTemperatureException{
