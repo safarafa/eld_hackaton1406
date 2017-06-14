@@ -1,6 +1,7 @@
 package controllers;
 
 import domain.Temperature;
+import exceptions.InvalidTemperatureException;
 
 import java.io.File;
 import java.io.IOException;
@@ -13,7 +14,10 @@ public class API_Connection {
 
     public void connect(String fileName) throws IOException{
         Scanner input = new Scanner(new File(fileName));
-        Temperature temperature = new Temperature(input.nextInt());
-
+        int temperature = input.nextInt();
+        if(temperature < Temperature.MINVALUE || temperature > Temperature.MAXVALUE)
+            throw new InvalidTemperatureException("Invalid temperature");
+        else
+            Temperature.setValue(temperature);
     }
 }
