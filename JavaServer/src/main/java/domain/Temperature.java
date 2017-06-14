@@ -13,14 +13,14 @@ public class Temperature {
     public static final int MINVALUE =0;
 
     public Temperature(int value) {
-        tempValue = value;
+        Temperature.tempValue = value;
     }
 
     public static int getValue() {
-        return tempValue;
+        return Temperature.tempValue;
     }
 
     public static void setValue(int value) {
-        Temperature.value = value;
+        Temperature.tempValue = value;
     }
 }
