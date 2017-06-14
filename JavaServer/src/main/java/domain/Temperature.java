@@ -1,11 +1,6 @@
 package domain;
 
 
-enum TempType{
-	CELSIUS,
-	FAHRENHEIT
-}
-
 public class Temperature {
 
     private static int tempValue;
