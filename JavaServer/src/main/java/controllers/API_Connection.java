@@ -19,5 +19,6 @@ public class API_Connection {
             throw new InvalidTemperatureException("Invalid temperature");
         else
             Temperature.setValue(temperature);
+        input.close();
     }
 }
