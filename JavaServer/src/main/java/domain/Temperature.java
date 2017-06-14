@@ -3,14 +3,14 @@ package domain;
 
 public class Temperature {
 
-    private static int value;
-    private String type;
+    private static int tempValue;
+    private String tempType;
     public static final int maxvalue=50;
     public static final int minvalue =0;
 
     public Temperature(int value, String type) {
-        this.value = value;
-        this.type = type;
+        this.tempValue = value;
+        this.tempType = type;
 
     }
 
@@ -30,18 +30,18 @@ public class Temperature {
     }
 
     public static int getValue() {
-        return value;
+        return tempValue;
     }
 
     public static void setValue(int value) {
-        Temperature.value = value;
+        Temperature.tempValue = value;
     }
 
     public String getType() {
-        return type;
+        return tempType;
     }
 
     public void setType(String type) {
-        this.type = type;
+        this.tempType = type;
     }
 }
