@@ -1,6 +1,7 @@
 package controllers;
 
 import domain.Temperature;
+import exceptions.InvalidTemperatureException;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,20 +18,20 @@ public class TemperatureController {
     }
 
     @GetMapping
-    public void getTemperature()
+    public void getTemperature ()
     {
-
+        temperatureService.showTemperature();
     }
 
     @PostMapping("/increment")
     public void increment(){
-
+        temperatureService.increment();
 
     }
 
-    @PostMapping
+    @PostMapping("/decrement")
     public void decrement(){
-
+        temperatureService.decrement();
     }
 
 }
