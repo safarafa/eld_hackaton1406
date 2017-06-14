@@ -6,7 +6,7 @@ import exceptions.InvalidTemperatureException;
 
 public class TemperatureService{
      public void increment()throws InvalidTemperatureException{
-         if(Temperature.getValue()+1<=Temperature.maxvalue)
+         if(Temperature.getValue()+1<=Temperature.MAXVALUE)
          {
              Temperature.setValue(Temperature.getValue()+1);
          }
@@ -15,7 +15,7 @@ public class TemperatureService{
      }
 
      public void decrement() throws InvalidTemperatureException{
-         if(Temperature.getValue()-1>=Temperature.minvalue)
+         if(Temperature.getValue()-1>=Temperature.MINVALUE)
          {
              Temperature.setValue(Temperature.getValue()-1);
          }
@@ -24,6 +24,6 @@ public class TemperatureService{
      }
 
     public int showTemperature() {
-         return Temperature.getMaxvalue();
+         return Temperature.getValue();
     }
 }

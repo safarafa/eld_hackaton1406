@@ -11,11 +11,20 @@ public class Temperature {
         Temperature.tempValue = value;
     }
 
+    public int getTemperature() {
+        return tempValue;
+    }
+
+    public void setTemperature(int value) {
+        tempValue = value;
+    }
+
+
     public static int getValue() {
-        return Temperature.tempValue;
+        return tempValue;
     }
 
     public static void setValue(int value) {
-        Temperature.tempValue = value;
+        tempValue = value;
     }
 }
