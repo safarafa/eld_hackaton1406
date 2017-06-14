@@ -18,9 +18,9 @@ public class TemperatureController {
     }
 
     @GetMapping
-    public void getTemperature ()
+    public int getTemperature ()
     {
-        temperatureService.showTemperature();
+        return temperatureService.showTemperature();
     }
 
     @PostMapping("/increment")
