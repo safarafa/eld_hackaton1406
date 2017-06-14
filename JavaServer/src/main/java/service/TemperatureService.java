@@ -7,7 +7,7 @@ public class TemperatureService {
      void increment(){
          if(Temperature.getValue()<=Temperature.maxvalue && Temperature.getValue()>Temperature.minvalue)
          {
-             Temperature.setValue(Temperature.getValue()+1);
+             Temperature.setValue(Temperature.getValue());
          }
 
 
